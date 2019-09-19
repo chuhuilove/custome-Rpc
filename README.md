@@ -10,6 +10,7 @@
 * `protocol`: 传输协议(http和netty)模块
 * `provider`: 服务提供者模块
 * `register`: 注册中心模块
+* `interfaces`: 生产者和消费共同拥有的模块
 
 
 
