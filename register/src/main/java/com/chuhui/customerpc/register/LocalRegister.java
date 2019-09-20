@@ -12,14 +12,10 @@ import java.util.Map;
  */
 public class LocalRegister {
 
-    //通过什么来访问
-    // 那张图
+    private static final Map<String, Class> map = new HashMap<>();
 
-
-    private static final Map<String, Object> map = new HashMap<>();
-
-    public static void register(String serviceName, Object clazz) {
-        map.put(serviceName, clazz);
+    public static void register(String interfaceName, Class clazz) {
+        map.put(interfaceName, clazz);
     }
 
 }

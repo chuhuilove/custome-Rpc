@@ -3,8 +3,6 @@ import com.chuhui.cuatomerpc.provider.service.ExampleServiceImpl;
 import com.chuhui.customerpc.interfaces.ExampleInterface;
 import com.chuhui.customerpc.register.LocalRegister;
 
-import java.time.LocalDateTime;
-
 /**
  * Framework
  *
@@ -20,16 +18,14 @@ public class Provider {
 
         ExampleInterface exampleService=new ExampleServiceImpl();
 
-
         // 1. 本地注册
 
-        LocalRegister.register("exampleService",exampleService);
-
-
-//        exampleService
-
+        LocalRegister.register(ExampleInterface.class.getName(),ExampleServiceImpl.class);
 
         // 2. 远端注册
+
+
+
 
 
         HttpServer server = new HttpServer();
