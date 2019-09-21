@@ -1,4 +1,4 @@
-package com.chuhui.cuatomerpc.protocol.http;
+package com.chuhui.cuatomerpc.protocol.http.netty;
 
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;

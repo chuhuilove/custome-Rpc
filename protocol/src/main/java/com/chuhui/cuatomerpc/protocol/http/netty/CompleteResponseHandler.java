@@ -1,4 +1,4 @@
-package com.chuhui.cuatomerpc.protocol.http;
+package com.chuhui.cuatomerpc.protocol.http.netty;
 
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelFutureListener;
@@ -36,5 +36,10 @@ public class CompleteResponseHandler extends SimpleChannelInboundHandler<Default
 
     }
 
+    @Override
+    public void channelInactive(ChannelHandlerContext ctx) throws Exception {
 
+        System.err.println("has client connected");
+
+    }
 }

@@ -18,4 +18,8 @@ public class LocalRegister {
         map.put(interfaceName, clazz);
     }
 
+    public static  Class get (String interfaceName){
+        return map.get(interfaceName);
+    }
+
 }
