@@ -26,7 +26,7 @@
         <commons-collections.version>4.4</commons-collections.version>
         <commons-io.version>2.6</commons-io.version>
         <curator.version>4.2.0</curator.version>
-        <google-protocol.version>3.6.1</google-protocol.version>
+        <google-protocol.version>3.16.3</google-protocol.version>
         <tomcat.version>9.0.26</tomcat.version>
     </properties>
 
